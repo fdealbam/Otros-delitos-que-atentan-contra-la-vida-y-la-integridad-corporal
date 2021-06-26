@@ -562,7 +562,7 @@ body = html.Div([
      dbc.Row(
            [
                dbc.Col(dbc.Button(([html.P("Baja California", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/mx.jpeg?raw=true",
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/bc.jpeg?raw=true",
                   style={'size': 2,}),
                           html.P(
                           "Los 5 municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Tijuana (2,986), Mexicali (1,875), Ensenada (1,356), Tecate (473), Playas de Rosarito (300), ).",
@@ -575,7 +575,7 @@ body = html.Div([
                          }, disabled=True)),
                
                dbc.Col(dbc.Button(([html.P("Querétaro", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/cdmx.jpeg?raw=true",
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/qro.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
                            "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Querétaro (2,664), San Juan del Río (779), El Marqués (382), Corregidora (280), Amealco de Bonfil (172), Pedro Escobedo (155), Colón (118), Cadereyta de Montes (112), Tequisquiapan (109), y Jalpan de Serra (94).",
@@ -595,7 +595,7 @@ body = html.Div([
     
                 dbc.Row([
           dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/nl.jpeg?raw=true"),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/mx.jpeg?raw=true"),
     
                        html.P(
                            "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Ecatepec de Morelos (592), Toluca (330), Naucalpan de Juárez (324), Tlalnepantla de Baz (171), Nezahualcóyotl (157), Tultitlán (141), Tecámac (134), Texcoco (128), Cuautitlán Izcalli (121), y Atizapán de Zaragoza (110).",
@@ -608,7 +608,7 @@ body = html.Div([
                          }, disabled=True)),
                        
                dbc.Col(dbc.Button(([html.P("Sinaloa", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/bc.jpeg?raw=true"),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/sinaloa.jpeg?raw=true"),
                     
                                    
                         html.P(
