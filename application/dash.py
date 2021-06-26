@@ -561,13 +561,11 @@ body = html.Div([
     
      dbc.Row(
            [
-               dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
+               dbc.Col(dbc.Button(([html.P("Baja California", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/mx.jpeg?raw=true",
                   style={'size': 2,}),
                           html.P(
-                          "Los 10 municipios con más aborto fueron: Ecatepec de Morelos (75), Chimalhuacán (68), La Paz (62)"
-                              ", Nezahualcóyotl (49), Ixtapaluca (43), Chalco (41), Valle de Chalco Solidaridad (30),"
-                              " Naucalpan de Juárez (30), Cuautitlán (28) y Toluca (26).",
+                          "Los 5 municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Tijuana (2,986), Mexicali (1,875), Ensenada (1,356), Tecate (473), Playas de Rosarito (300), ).",
                      style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -576,13 +574,11 @@ body = html.Div([
                          
                          }, disabled=True)),
                
-               dbc.Col(dbc.Button(([html.P("Ciudad de México", style={"font-size": 30,"color": "black","background-color": "white"}),
+               dbc.Col(dbc.Button(([html.P("Querétaro", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/cdmx.jpeg?raw=true",
                                     style={'size': 2,}),
                        html.P(
-                           "Las 10 alcaldías con más aborto fueron: Iztapalapa (138), Gustavo A. Madero (112), Álvaro Obregón (77)"
-                           ", Venustiano Carranza (64), Tlalpan (50), Cuauhtémoc (45), Tláhuac (28), Miguel Hidalgo (27), Iztacalco (26)"
-                           " y Xochimilco (22)..",
+                           "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Querétaro (2,664), San Juan del Río (779), El Marqués (382), Corregidora (280), Amealco de Bonfil (172), Pedro Escobedo (155), Colón (118), Cadereyta de Montes (112), Tequisquiapan (109), y Jalpan de Serra (94).",
                               style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                        ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -598,7 +594,7 @@ body = html.Div([
     html.Br(),
     
                 dbc.Row([
-          dbc.Col(dbc.Button(([html.P("Nuevo León", style={"font-size": 30,"color": "black","background-color": "white"}),
+          dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/nl.jpeg?raw=true"),
     
                        html.P(
@@ -613,15 +609,14 @@ body = html.Div([
                          
                          }, disabled=True)),
                        
-               dbc.Col(dbc.Button(([html.P("Baja California", style={"font-size": 30,"color": "black","background-color": "white"}),
+               dbc.Col(dbc.Button(([html.P("Sinaloa", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/bc.jpeg?raw=true"),
                      html.Br(),
                                      html.Br(),
                                      html.Br(),
                                    
                         html.P(
-                          "Los 5 municipios con más aborto fueron: Mexicali (144), Ensenada (87), Tijuana (40), "
-                            "Tecate (37) y Playas de Rosarito (28).",
+                          "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Mazatlán (784), Culiacán (715), Ahome (637), Guasave (320), El Fuerte (174), Navolato (77), Escuinapa (71), Salvador Alvarado (69), Elota (63), y Rosario (50).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
