@@ -598,9 +598,7 @@ body = html.Div([
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/nl.jpeg?raw=true"),
     
                        html.P(
-                           "Los 10 municipios con más aborto fueron: Monterrey (65), Juárez (58), García (55), Guadalupe (49),"
-                           " Apodaca (39), Santa Catarina (18), Cadereyta Jiménez (15), San Nicolás de los Garza (14),"
-                           " Pesquería (11) y San Pedro Garza García (10).",
+                           "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Ecatepec de Morelos (592), Toluca (330), Naucalpan de Juárez (324), Tlalnepantla de Baz (171), Nezahualcóyotl (157), Tultitlán (141), Tecámac (134), Texcoco (128), Cuautitlán Izcalli (121), y Atizapán de Zaragoza (110).",
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
                ]), style={"background-color":"white",
                          "box-shadow": "10px 20px 30px black",
@@ -611,9 +609,7 @@ body = html.Div([
                        
                dbc.Col(dbc.Button(([html.P("Sinaloa", style={"font-size": 30,"color": "black","background-color": "white"}),
                        dbc.CardImg(src="https://github.com/fdealbam/Aborto/blob/main/application/static/bc.jpeg?raw=true"),
-                     html.Br(),
-                                     html.Br(),
-                                     html.Br(),
+                    
                                    
                         html.P(
                           "Los diez municipios con más delitos que atentan contra la vida y la integridad corporal fueron: Mazatlán (784), Culiacán (715), Ahome (637), Guasave (320), El Fuerte (174), Navolato (77), Escuinapa (71), Salvador Alvarado (69), Elota (63), y Rosario (50).",
