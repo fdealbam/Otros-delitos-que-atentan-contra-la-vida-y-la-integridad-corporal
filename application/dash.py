@@ -539,7 +539,7 @@ body = html.Div([
             [
                 #html.H4("Consideraciones generales "),
                 html.P(
-                    "La Contra la integridad corporal es uno de los delitos más graves de la violencia de género que se vive en el país, "
+                    "Los delitos que atentan contra la integridad corporal son de los delitos más graves de la violencia de género que se vive en el país, "
                     "además, son problemas aún irresueltos y son tema central de la " 
                     "agenda legislativa, pero hoy alcanzan relevancia en la agenda seguridad pública del país, también. "+
                    " Entre 2015 y 2022 se registraron "+ str(f"{int(TOTTRATAPERSONAS):,}") +" casos, lo que representa una tasa de "+
