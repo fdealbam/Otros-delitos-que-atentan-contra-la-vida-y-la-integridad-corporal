@@ -1,5 +1,4 @@
 # Otros delitos vs vida e integridad corporal
-# Trata de personas
 
 import dash
 import matplotlib.pyplot as plt 
@@ -31,8 +30,8 @@ d2 = today.strftime("Fecha de actualización : %d-%m-%Y")
 tabla1 = pd.read_csv('https://raw.githubusercontent.com/fdealbam/violenciadegenero/main/Tabla1.csv')              
 tabla1_f = tabla1[tabla1['Tipo de delito']== 'Contra integridad corporal' ]
 tabla1_f.reset_index(inplace=True,)
-TOTINCFAM = tabla1_f.iloc[0]['GRAND TOTAL']
-TASAINCFAM = tabla1_f.iloc[0]['tasa_acumulada']
+#TOTINCFAM = tabla1_f.iloc[0]['GRAND TOTAL']
+#TASAINCFAM = tabla1_f.iloc[0]['tasa_acumulada']
 
 ###############################
 # DATABASES
@@ -127,7 +126,7 @@ femi15_21 = fg[[
  'Enero21','Febrero21','Marzo21','Abril21','Mayo21','Junio21','Julio21',
  'Agosto21','Septiembre21','Octubre21','Noviembre21','Diciembre21',
     
- 'Enero22',#'Febrero22','Marzo22','Abril22','Mayo22','Junio22','Julio22',
+ 'Enero22','Febrero22','Marzo22','Abril22','Mayo22','Junio22',#'Julio22',
  #'Agosto22','Septiembre22','Octubre22','Noviembre22','Diciembre22'
              ]]
 
@@ -155,8 +154,8 @@ femi15_21['Total2020']= femi15_21[[ 'Enero20', 'Febrero20', 'Marzo20', 'Abril20'
 femi15_21['Total2021']= femi15_21[[ 'Enero21','Febrero21', 'Marzo21', 'Abril21', 'Mayo21',
                                    'Junio21','Julio21','Agosto21','Septiembre21','Octubre21',
                                    'Noviembre21','Diciembre21']].sum(axis=1)
-femi15_21['Total2022']= femi15_21[[ 'Enero22', #'Febrero22', 'Marzo22', 'Abril22', 'Mayo22',
-                               #'Junio22', 'Julio22', 'Agosto22', 'Septiembre22', 'Octubre22',
+femi15_21['Total2022']= femi15_21[[ 'Enero22', 'Febrero22', 'Marzo22', 'Abril22', 'Mayo22',
+                               'Junio22', #'Julio22', 'Agosto22', 'Septiembre22', 'Octubre22',
                                #'Noviembre22', 'Diciembre22',
                                   ]].sum(axis=1)
 
@@ -193,7 +192,7 @@ pagra = fg[[
  'Enero21', 'Febrero21', 'Marzo21','Abril21', 'Mayo21', 'Junio21', 'Julio21', 'Agosto21',
    'Septiembre21','Octubre21','Noviembre21','Diciembre21',
     
- 'Enero22', #'Febrero22', 'Marzo22','Abril22', 'Mayo22', 'Junio22', 'Julio22', 'Agosto22',
+ 'Enero22', 'Febrero22', 'Marzo22','Abril22', 'Mayo22', 'Junio22', #'Julio22', 'Agosto22',
    #'Septiembre22','Octubre22','Noviembre22','Diciembre22'
             ]]
 
@@ -471,6 +470,9 @@ bulletedo2 = ("Los 10 municipios con más delitos Contra la integridad corporal 
 bulletedo3 = ("Los 10 municipios con más delitos Contra la integridad corporal fueron: "+str(n1edo3) +" ("+ str(v1edo3)+"), "+str(n2edo3) +" ("+ str(v2edo3)+"), "+str(n3edo3) +" ("+ str(v3edo3)+"), "+str(n4edo3) +" ("+ str(v4edo3)+"), "+str(n5edo3) +" ("+ str(v5edo3)+"), "+str(n6edo3) +" ("+ str(v6edo3)+"), "+str(n7edo3) +" ("+ str(v7edo3)+"), "+str(n8edo3) +" ("+ str(v8edo3)+"), "+str(n9edo3) +" ("+ str(v9edo3)+") y "+str(n10edo3) +" ("+ str(v10edo3)+").")
 bulletedo4 = ("Los 10 municipios con más delitos Contra la integridad corporal fueron: "+str(n1edo4) +" ("+ str(v1edo4)+"), "+str(n2edo4) +" ("+ str(v2edo4)+"), "+str(n3edo4) +" ("+ str(v3edo4)+"), "+str(n4edo4) +" ("+ str(v4edo4)+"), "+str(n5edo4) +" ("+ str(v5edo4)+"), "+str(n6edo4) +" ("+ str(v6edo4)+"), "+str(n7edo4) +" ("+ str(v7edo4)+"), "+str(n8edo4) +" ("+ str(v8edo4)+"), "+str(n9edo4) +" ("+ str(v9edo4)+") y "+str(n10edo4) +" ("+ str(v10edo4)+").")
 
+total1521 = junto15_21[['Total2015', 'Total2016', 'Total2017', 'Total2018',
+       'Total2019', 'Total2020', 'Total2021', 'Total2022',]].sum().sum()
+total1521b = f"{int(total1521):,}"
 
 ####################################
 
@@ -500,7 +502,7 @@ body = html.Div([
             
            dbc.Col(html.H5(" Centro de Estudios Sociales y de Opinión Pública," 
                            " Cámara de Diputados"
-                           " México, 2021 "),
+                           " México, 2022 "),
                   width={'size': 3, 'offset': 0}),
                ], justify="end",),
             
@@ -542,12 +544,11 @@ body = html.Div([
                     "Los delitos que atentan contra la integridad corporal son de los delitos más graves de la violencia de género que se vive en el país, "
                     "además, son problemas aún irresueltos y son tema central de la " 
                     "agenda legislativa, pero hoy alcanzan relevancia en la agenda seguridad pública del país, también. "+
-                   " Entre 2015 y 2022 se registraron "+ str(f"{int(TOTTRATAPERSONAS):,}") +" casos, lo que representa una tasa de "+
-       str(TASATRATAPERSONAS) +" delitos por cada 100 mil habitantes. "+
+                   " Entre 2015 y 2022 se registraron "+ str(total1521b) +" casos. "+
                   
                     "Este tablero analítico se compone de una sección en la cual tratamos la Contra la integridad corporal, observamos "
                     "su gravedad según intervalos anuales o mensuales; incluimos el análisis detallado de cuatro "
-                    "entidades con más incidencias de este delito.""; finalmente, comparamos los rankings por entidad "
+                    "entidades con más incidencias de este delito; finalmente, comparamos los rankings por entidad "
                     "según sumas del periódo 2015 al 2021 con las tasas por entidad del mismo intervalo. " 
                     " "                    
                     "Hoy existen cada vez mayor atención institucional para atender la violencia contra las mujeres y son fuerte "
@@ -687,7 +688,7 @@ body = html.Div([
                        dbc.Badge("mensuales", color="info", className="mr-1")]), 
                                        width={'size': 11,  "offset":1 })]),
        dbc.Row([        
-               dbc.Col(html.H5("(hasta enero 2022)"),
+               dbc.Col(html.H5("(hasta junio 2022)"),
                                        width={ 'size': 3, "offset":1 }),
 
             ]),
