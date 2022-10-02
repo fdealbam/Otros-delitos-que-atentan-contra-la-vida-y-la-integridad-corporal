@@ -725,8 +725,8 @@ body = html.Div([
     
      dbc.Row(
            [
-                  dbc.Col(dbc.Button(([html.P("Baja California", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/bc.jpeg?raw=true",
+                  dbc.Col(dbc.Button(([html.P(edoname1, style={"font-size": 30,"color": "black","background-color": "white"}),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/Mapa Baja California.png?raw=true",
                   style={'size': 2,}),
                           html.P(bulletedo1,
                      style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
@@ -737,8 +737,8 @@ body = html.Div([
                          
                          }, disabled=True)),
                
-              dbc.Col(dbc.Button(([html.P("Querétaro", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/qro.jpeg?raw=true",
+              dbc.Col(dbc.Button(([html.P(edoname2, style={"font-size": 30,"color": "black","background-color": "white"}),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/Mapa Querétaro.png?raw=true",
                                     style={'size': 2,}),
                     
                           html.P(bulletedo2,
@@ -757,8 +757,8 @@ body = html.Div([
     html.Br(),
     
                 dbc.Row([
-         dbc.Col(dbc.Button(([html.P("México", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/mx.jpeg?raw=true"),
+         dbc.Col(dbc.Button(([html.P(edoname3, style={"font-size": 30,"color": "black","background-color": "white"}),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/Mapa México.png?raw=true"),
     
                        html.P(bulletedo3,
                            style={'font-size': 14, "font-family":"Arial", "text-align":"justify" }),
@@ -768,8 +768,8 @@ body = html.Div([
                         'width': '550px',
                          
                          }, disabled=True)),
-              dbc.Col(dbc.Button(([html.P("Sinaloa", style={"font-size": 30,"color": "black","background-color": "white"}),
-                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/sinaloa.jpeg?raw=true"),
+              dbc.Col(dbc.Button(([html.P(edoname4, style={"font-size": 30,"color": "black","background-color": "white"}),
+                       dbc.CardImg(src="https://github.com/fdealbam/Otros-delitos-que-atentan-contra-la-vida-y-la-integridad-corporal/blob/main/application/static/Mapa Sinaloa.png?raw=true"),
                     
                                      html.Br(),
                                      html.Br(),
